@@ -5,6 +5,22 @@ All notable changes to vard will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-08-05
+
+### Security
+
+- Pin pnpm 10.34.5 and enforce `strictDepBuilds` with an exact, reviewed `allowBuilds` policy.
+- Deny the optional `fsevents@2.3.3` lifecycle build while allowing only the reviewed esbuild installers required by the toolchain.
+- Isolate dependency installation from npm publication credentials and publish a prebuilt tarball with lifecycle scripts disabled.
+- Harden CI dependency caching and frozen-lockfile installs around the exact pnpm and lockfile versions.
+- Replace the pre-commit hook's `npx` invocation with the locally installed `lint-staged` binary.
+
+### Changed
+
+- Document the Corepack-based pnpm setup used by contributors.
+
+---
+
 ## [1.2.0] - 2025-11-12
 
 ### Added

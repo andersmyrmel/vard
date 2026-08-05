@@ -34,11 +34,12 @@ Please be respectful and constructive in all interactions. We're here to build s
 
 ## Development Setup
 
-Vard uses **pnpm** as its package manager. Make sure you have Node.js 18+ installed.
+Vard uses **pnpm** as its package manager. For repository development, use Node.js 18.12 or newer.
 
 ```bash
-# Install pnpm if you haven't already
-npm install -g pnpm
+# Enable Corepack; package.json selects pnpm 10.34.5 exactly
+corepack enable
+pnpm --version
 
 # Install dependencies
 pnpm install

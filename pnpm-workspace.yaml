@@ -1,0 +1,9 @@
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade
+blockExoticSubdeps: true
+strictDepBuilds: true
+
+allowBuilds:
+  esbuild@0.21.5: true
+  esbuild@0.25.10: true
+  fsevents@2.3.3: false
